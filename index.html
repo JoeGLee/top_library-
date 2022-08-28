@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="modal" id="modal">
+        <button data-close-button class="closeModal">&times;</button>
+        <h2>Add A Book</h2>
+        <form action="" class="addBook">
+            <div>
+                <label for="formTitle">Title:</label>
+                <input type="text" id="formTitle" required>
+            </div>
+            <div>
+                <label for="formAuthor">Author:</label>
+                <input type="text" name="" id="formAuthor" required>
+            </div>
+            <div>
+                <label for="formPageCount">Page Count:</label>
+                <input type="text" id="formPageCount" required>
+            </div>
+            <div>
+                <label for="formPublish">Publication Date:</label>
+                <input type="text" id="formPublish" required>   
+            </div>
+            <div>
+                <label for="read">Read:</label>
+                <input type="checkbox" name="checkbox" id="read">
+            </div>
+            <button class="add">Add</button>
+        </form>
+        
+    </div>
+    <div id="overlay"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">TOP Library</h1>
+            <div class="profileContainer">
+                <p class="profile">Someone's Reading List</p>
+                <button data-modal-target="#modal" class="addNewBook">&#43;</button>
+            </div>
+          
+        </div>  
+        <div class="shelf">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
